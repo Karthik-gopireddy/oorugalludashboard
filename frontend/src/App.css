@@ -1,0 +1,725 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.navbarcontainer{
+  background-color: rgb(192 132 252) !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* registration page */
+
+.registrationContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registrationformContainer{
+  background-color: #a4f2e4;
+  width:250px;
+  height: fit-content;
+  border-radius: 10px;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+.registrationformContainer h2{
+  text-align: center;
+  text-decoration: underline;
+}
+.inputcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+}
+.labels{
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+}
+.buttoncontainer{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.submitButton{
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(35, 46, 93);
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+
+}
+.submitButton:hover{
+  cursor: pointer;
+  background-color: #025e2a;
+  
+}
+.inputType{
+  height: 30px;
+  border: none;
+  width: 250px !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.paragraph{
+  font-size: 15px;
+}
+
+.error{
+  color: red;
+ margin-left: 25%;
+}
+
+
+/* navbar stylings */
+.navbarcontainer{
+  width: 100vw;
+  height: 60px;
+  background-color: #282c34;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0px 30px;
+}
+
+.unorderlistcomntainer li{
+
+  list-style-type: none;
+  margin-left: -150px;
+
+}
+.unorderlistcomntainer li:hover{
+
+ cursor: pointer;
+
+}
+.homeh1{
+  text-align: center;
+}
+
+*{
+  font-family: roboto;
+}
+.Navbarsection {
+  background-color: rgb(53, 53, 188);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  height: 80px;
+}
+
+/* Navbar styles */
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbarlogoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navbarlogoContainer p {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.unorderlistcomntainer {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.unorderlistcomntainer li {
+  cursor: pointer;
+}
+
+/* Hide the menu in mobile view */
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .unorderlistcomntainer {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .unorderlistcomntainer.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+.Navbarsection span:hover{
+  cursor: pointer;
+}
+
+.sidebarsection {
+  width: 100%;
+  max-width: 200px;
+  min-height: 468px;
+  background-color: rgb(216 180 259);
+  padding-top: 10px;
+  color: #000;
+  font-weight: 490;
+  font-size: 19px;
+}
+
+.sidebarsection ul li{
+  margin-bottom: 20px;
+  list-style-type: none;
+  width: 110;
+  padding: 5px;
+  border-radius: 15px;
+
+
+}
+.sidebarsection ul li:hover{
+  cursor: pointer;
+  background-color:  rgb(53, 53, 188);
+  color: #fff;
+  text-align: center;
+
+}
+
+
+.routercontainer{
+  display: flex;
+  background-color: rgb(243 232 255);
+}
+
+/* registration page */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+} */
+
+.registration-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  height: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* add firm css */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+} */
+
+.add-firm-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-firm-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"], select, input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, select:focus, input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  margin-top: 10px;
+
+  
+
+}
+
+.checkbox-group label {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+ 
+}
+.checkbox-group label input{
+  width: fit-content;
+
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* add products */
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+} */
+
+.add-firm-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-firm-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* all products table */
+
+
+
+.product-table-container {
+  min-width: 800px !important;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+.product-image:hover{
+ transform: scale(3);
+ transition: 2s;
+}
+
+.delete-btn {
+  padding: 8px 12px;
+  background-color: #ed5858;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.edit-btn {
+  padding: 8px 12px;
+  background-color: #4653e6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #f60000;
+}
+.edit-btn:hover {
+  background-color: #01063d;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  line-height: 30px;
+}
+
+
+
+
+/* Basic styling for modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 80%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-content button[type="button"] {
+  background-color: #dc3545;
+}
+
+.modal-content button:hover {
+  opacity: 0.8;
+}
+
+
+
+/* styles.css or your CSS file */
+
+.order-table-container {
+  margin: 20px;
+}
+
+.order-table {
+  width: 100% !important;
+  border-collapse: collapse; /* Collapse borders to avoid double borders */
+}
+
+.order-table th, .order-table td {
+  border: 1px solid #ddd; /* Add a border for each cell */
+  padding: 10px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.order-table th {
+  background-color: #f2f2f2; /* Light gray background for header */
+  font-weight: bold; /* Bold text for headers */
+}
+
+.product-image {
+  border-radius: 5px; /* Add some rounded corners for images */
+  margin: 2px; /* Add a little margin around images */
+}
+
+.deletebuttoninOrders{
+  background-color: rgb(233, 80, 80);
+  width: 80px;
+  height: 30px;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+
+}
+.deletebuttoninOrders:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+
+
+.navbarlogoContainer{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  
+}
