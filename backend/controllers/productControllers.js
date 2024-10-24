@@ -17,13 +17,17 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 const addProduct = async (req, res) => {
     try {
-        const { productName, price, description } = req.body;
-        const image = req.file ? `/uploads/${req.file.filename}` : undefined;  // Store the full path
         
+        const { productName, price, description } = req.body;
+        const image = req.file ? req.file.filename : undefined;
+
+
+        // Check for missing fields
         if (!productName || !price) {
             return res.status(400).json({ error: 'Product name and price are required.' });
         }
 
+        // Create and save the product
         const product = new Product({ productName, price, description, image });
         const savedProduct = await product.save();
 
@@ -33,7 +37,6 @@ const addProduct = async (req, res) => {
         res.status(500).json({ error: "Server error" });
     }
 };
-
 
 
 
