@@ -17,10 +17,12 @@ const AllProducts = () => {
         const fetchProducts = async () => {
             try {
                 const response = await fetch(`${url}/product/get-products`);
+                console.log(response)
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }
                 const data = await response.json();
+                console.log(data)
                 setProducts(data);
             } catch (error) {
                 setError(error.message);
@@ -155,7 +157,7 @@ const AllProducts = () => {
                     {currentProducts.map((product) => (
                         <tr key={product._id}>
                             <td>{product.productName}</td>
-                            <td>${product.price}</td>
+                            <td>Rs: {product.price} /-</td>
                             <td>{product.description}</td>
 
                             <td>
