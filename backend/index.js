@@ -37,7 +37,7 @@ mongoose.connect(process.env.MONGODB_URL)
 
     
 
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+    app.use('/uploads', express.static('uploads'));
 
 
 
@@ -93,6 +93,11 @@ app.put('/product/update-product/:id', upload.none(), async (req, res) => {
         res.status(500).send('Server error');
     }
 });
+
+app.get('/uploads/:imageName', (req, res) => {
+    const imageName = req.params.imageName;
+    res.sendFile(path.join(__dirname, 'uploads', imageName));
+  });
 
 
 
